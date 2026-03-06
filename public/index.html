@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GopherJS SQLite Viewer</title>
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for in-browser compilation (simple setup) -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <!-- AG Grid -->
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/ag-grid-react/bundles/ag-grid-react.min.js"></script>
+    
+    <!-- GopherJS Compiled Client -->
+    <script src="client.js"></script>
+    
+    <style>
+        body, html { height: 100%; margin: 0; }
+        #root { height: 100%; }
+        .ag-theme-alpine { height: 100%; width: 100%; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
